@@ -22,6 +22,9 @@ grep -r [specified string] [file]
 The following image is a sample of it's application using it on files and directories from ./technical. <br>
 ![Image](lab3_2.jpg) <br>
 Here we searched for the specificed string of "industry" in ```technical/plos``` where the ```pmed.0020281.txt``` is located. The string is searched in that file then it's output is saved to ```results1.txt```. Afterwards, its contents are concatinated using ```cat``` command. <br>
+*Second Example*<br>
+![Image](lab3_6.jpg) <br>
+Here we see a second application of the `-r` command, however this time with the specificed string of "success". Similarly, we searched for the specificed string in ```technical/plos``` where the ```pmed.0020281.txt``` is located. The string is searched in that file then it's output is saved to ```results5.txt```. Afterwards, its contents are concatinated using ```cat``` command. <br>
 <br>
 2) *`-i` command* <br>
 `-i` (or --ignore-case): This option tells grep to ignore the case of the search string. This means that if you search for a string with uppercase letters, it will also match any occurrences of that string with lowercase letters, and vice versa. This is useful when you need to search for a string but are not sure whether it is in uppercase or lowercase. <br>
@@ -31,8 +34,10 @@ grep -i [specified string] [file]
 ```
 The following image is a sample of it's application using it on files and directories from ./technical. <br>
 ![Image](lab3_4.jpg) <br>
-Here we searched for the specificied string of "industry"  in ```technical/plos``` where the ```pmed.0020281.txt``` is located. 
-Note that its output is the same as the output for the `-r` command since they are doing similar tasks of search and retrieving a specificed string. The only difference is it is not case sensitive. The output is saved to ```results02.txt```. Afterwards, its contents are concatinated using ```cat``` command . <br>
+Here we searched for the specificied string of "industry"  in ```technical/plos``` where the ```pmed.0020281.txt``` is located. Note that its output is the same as the output for the `-r` command since they are doing similar tasks of search and retrieving a specificed string. The only difference is it is not case sensitive. The output is saved to ```results02.txt```. Afterwards, its contents are concatinated using ```cat``` command . <br>
+*Second Example*<br>
+![Image](lab3_7.jpg) <br>
+Here we see a second application of the `-i` command, however this time with the specificed string of "SUCCESS". Not that despite our specified string is in all uppercase, our output remain the same as the second example of command `-r`. Similarly, we searched for the specificed string in ```technical/plos``` where the ```pmed.0020281.txt``` is located. The string is searched in that file then it's output is saved to ```results6.txt```. Afterwards, its contents are concatinated using ```cat``` command. <br>
 <br>
 3) *`-v` command* <br>
 `-v` (or --invert-match): This option tells grep to print all lines that do not contain the specified string. This is useful when you need to find all lines that do not match a certain pattern. <br>
@@ -43,6 +48,9 @@ grep -v [specified string] [file]
 The following image is a sample of it's application using it on files and directories from ./technical. <br>
 ![Image](lab3_3.jpg) <br>
 Here we searched for the specificied string of "industry"  in ```technical/plos``` where the ```pmed.0020281.txt``` is located. The `-v` command then search through the file and prints all the lines that do not contain the specificed string "industry". The output is saved to ```results3.txt```. Afterwards, its contents are concatinated using ```cat``` command . <br>
+*Second Example*<br>
+![Image](lab3_8.jpg) <br>
+Here we see a second application of the `-v` command, however this time with the specificed string of "Whistleblower". Similarly, we searched for the specificied string in ```technical/plos``` where the ```pmed.0020281.txt``` is located. The `-v` command then search through the file and prints all the lines that do not contain the specificed string "Whistleblower". The output is saved to ```results7.txt```. Afterwards, its contents are concatinated using ```cat``` command. <br>
 <br>
 4) *`-l` command* <br>
 `-l` (or --files-with-matches): This option tells grep to print only the filenames of the files that contain the specified string, not the lines themselves. This is useful when you need to quickly find all files that contain a certain pattern. <br>
@@ -53,5 +61,8 @@ grep -l [specified string] [file]
 The following image is a sample of it's application using it on files and directories from ./technical. <br>
 ![Image](lab3_5.jpg) <br>
 Here we searched for the specificied string of "pmed" in the entire directory of ```technical/plos```. The `-l` command then search through the entire directory and prints all the filenames that contains the specificed string "pmed". The output is saved to ```results4.txt```. Afterwards, its contents are concatinated using ```cat``` command . <br>
+*Second Example*<br>
+![Image](lab3_9.jpg) <br>
+Here we see a second application of the `-l` command, however this time with the specificed string of "journal". Similarly, we searched for the specificied string in the entire directory of ```technical/plos```. The `-l` command then search through the entire directory and prints all the filenames that contains the specificed string "journal". The output is saved to ```results8.txt```. Afterwards, its contents are concatinated using ```cat``` command . <br>
 <br>
 **NOTE:** Here is the link to where I found these commands -> [grep(1) - Linux man page](https://linux.die.net/man/1/grep)
