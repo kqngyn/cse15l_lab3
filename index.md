@@ -19,8 +19,7 @@ The following is the syntax for '-r' command: <br>
 ```
 grep -r [specified string] [file]
 ```
-<br>
 The following image is a sample of it's application using it on files and directories from ./technical. <br>
 ![Image](lab3_2.jpg) <br>
-
+Here we searched for the specificed string of "industry" in ```technical/plos``` where the ```pmed.0020281.txt``` is located. The string is searched in that file then it's output is saved to ```results1.txt```. Afterwards, its contents are printed using ```cat```.
 
