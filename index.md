@@ -52,7 +52,6 @@ grep -l [specified string] [file]
 ```
 The following image is a sample of it's application using it on files and directories from ./technical. <br>
 ![Image](lab3_5.jpg) <br>
-Here we searched for the specificied string of "industry"  in ```technical/plos``` where the ```pmed.0020281.txt``` is located. 
-The `-l` command then search through the file and prints all the lines that do not contain the specificed string "industry". 
-The output is saved to ```results4.txt```. Afterwards, its contents are concatinated using ```cat``` command . <br>
+Here we searched for the specificied string of "pmed" in the entire directory of ```technical/plos```. The `-l` command then search through the entire directory and prints all the filenames that contains the specificed string "pmed". The output is saved to ```results4.txt```. Afterwards, its contents are concatinated using ```cat``` command . <br>
 <br>
+**NOTE:** Here is the link to where I found these commands -> [grep(1) - Linux man page](https://linux.die.net/man/1/grep)
