@@ -31,15 +31,28 @@ grep -i [specified string] [file]
 ```
 The following image is a sample of it's application using it on files and directories from ./technical. <br>
 ![Image](lab3_4.jpg) <br>
-Here we searched for the specificied string of "industry"  in ```technical/plos``` where the ```pmed.0020281.txt``` is located. The `-v` command then search through the file and prints all the lines that do not contain the specificed string "industry". The output is saved to ```results2.txt```. Afterwards, its contents are concatinated using ```cat``` command . <br>
+Here we searched for the specificied string of "industry"  in ```technical/plos``` where the ```pmed.0020281.txt``` is located. 
+Note that its output is the same as the output for the `-r` command since they are doing similar tasks of search and retrieving a specificed string. The only difference is it is not case sensitive. The output is saved to ```results02.txt```. Afterwards, its contents are concatinated using ```cat``` command . <br>
 <br>
 3) *`-v` command* <br>
 `-v` (or --invert-match): This option tells grep to print all lines that do not contain the specified string. This is useful when you need to find all lines that do not match a certain pattern. <br>
-The following is the syntax for '-v' command: <br>
+The following is the syntax for `-v` command: <br>
 ```
 grep -v [specified string] [file]
 ```
 The following image is a sample of it's application using it on files and directories from ./technical. <br>
 ![Image](lab3_3.jpg) <br>
 Here we searched for the specificied string of "industry"  in ```technical/plos``` where the ```pmed.0020281.txt``` is located. The `-v` command then search through the file and prints all the lines that do not contain the specificed string "industry". The output is saved to ```results3.txt```. Afterwards, its contents are concatinated using ```cat``` command . <br>
+<br>
+4) *`-l` command* <br>
+`-l` (or --files-with-matches): This option tells grep to print only the filenames of the files that contain the specified string, not the lines themselves. This is useful when you need to quickly find all files that contain a certain pattern. <br>
+The following is the syntax for `-l` command: <br>
+```
+grep -l [specified string] [file]
+```
+The following image is a sample of it's application using it on files and directories from ./technical. <br>
+![Image](lab3_3.jpg) <br>
+Here we searched for the specificied string of "industry"  in ```technical/plos``` where the ```pmed.0020281.txt``` is located. 
+The `-v` command then search through the file and prints all the lines that do not contain the specificed string "industry". 
+The output is saved to ```results3.txt```. Afterwards, its contents are concatinated using ```cat``` command . <br>
 <br>
