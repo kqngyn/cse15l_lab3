@@ -51,8 +51,8 @@ The following is the syntax for `-l` command: <br>
 grep -l [specified string] [file]
 ```
 The following image is a sample of it's application using it on files and directories from ./technical. <br>
-![Image](lab3_3.jpg) <br>
+![Image](lab3_5.jpg) <br>
 Here we searched for the specificied string of "industry"  in ```technical/plos``` where the ```pmed.0020281.txt``` is located. 
-The `-v` command then search through the file and prints all the lines that do not contain the specificed string "industry". 
-The output is saved to ```results3.txt```. Afterwards, its contents are concatinated using ```cat``` command . <br>
+The `-l` command then search through the file and prints all the lines that do not contain the specificed string "industry". 
+The output is saved to ```results4.txt```. Afterwards, its contents are concatinated using ```cat``` command . <br>
 <br>
