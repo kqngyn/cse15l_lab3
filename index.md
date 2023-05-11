@@ -10,4 +10,15 @@ grep [options] pattern [files]
 <br>
 To better visualize, the following image is a screenshot of the syntax of 'grep' command syntax. <br>
 ![Image](lab3_1.jpg) <br>
-In this screenshot, we see that 'grep' is filtering out all files that contains "biomed" in it. Then it is saving all the outputs into the "grep-results.txt". Afterwards, we use the 'wc' command to print out the line count, word count, and character count of our saved outputs in "grep-results.txt"
+In this screenshot, we see that 'grep' is filtering out all files that contains "biomed" in it. Then it is saving all the outputs into the "grep-results.txt". Afterwards, we use the 'wc' command to print out the line count, word count, and character count of our saved outputs in "grep-results.txt". <br>
+
+**Four Alternatives to 'grep'** <br>
+*1) '-r' command* <br>
+-r (or --recursive): This option tells grep to search for the specified string in all files within the specified directory and its subdirectories. This is useful when you need to search for a string in a large number of files within a directory tree. <br>
+The following is the syntax for '-r' command: <br>
+```
+grep -r [specified string] [file]
+```
+<br>
+
+
